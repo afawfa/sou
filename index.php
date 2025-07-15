@@ -42,22 +42,25 @@ if (empty($q)) {
 </head>
 
 <body>
-    <script>
-    /*随机bing背景start,如无需求可注释掉*/
-    $.ajax({
-        url: './bg/',
-        dataType: 'json',
-        error: function() {
-            console.log('网络错误！');
-        },
-        success: function(res) {
-            //var bgimg;
-            var x=Math.floor(Math.random()*9);
-            $("body").append('<style> body{background:url("https://cn.bing.com'+res.images[x].url+'") no-repeat center/cover;}</style>');
-        }
-    });
-    /*随机bing背景end*/
-    </script> 
+#    <script>
+#    /*随机bing背景start,如无需求可注释掉*/
+#    $.ajax({
+#        url: './bg/',
+#        dataType: 'json',
+#        error: function() {
+#            console.log('网络错误！');
+#        },
+#        success: function(res) {
+#            //var bgimg;
+#            var x=Math.floor(Math.random()*9);
+#            $("body").append('<style> body{background:url("https://cn.bing.com'+res.images[x].url+'") no-repeat center/cover;}</style>');
+#        }
+#    });
+#    /*随机bing背景end*/
+#    </script> 
+    <style> 
+      body{background:url("https://cn.bing.com//th?id=OHR.HuntsMesa_JA-JP3140979616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp") no-repeat center/cover;}
+    </style>
     <div id="menu"><i></i></div>
     <div class="list closed">
         <ul>
